@@ -98,4 +98,16 @@ class SmartComponent extends React.Component {
 export default SmartComponent;
 ```
 
-Above, notice that we have a method called `render`. This method is where we will choose what elements to return to make up the React element.
+Above, notice that we have a method called `render`. This method is where we will choose what elements to return to make up the React element. This is the part of the component that is known as `JSX`.
+
+### JSX
+
+The tag syntax inside of a component is not a string or HTML. It's called `JSX`, which is a syntax extension to Javascript. JSX produces React "elements" that describe how the user interface should appear for that React element. This looks very familiar to HTML, so if you are comfortable with that, then it should be easy to get the hang of.
+
+```jsx
+<div>
+    <h1>This is JSX</h1>
+    <p>It looks very similar to HTML, but it is not HTML. It is an extension of Javascript that helps us create the UI of a component</p>
+</div>
+```
+
