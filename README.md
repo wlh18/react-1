@@ -244,3 +244,15 @@ class MyComponent extends React.Component {
 
 export default MyComponent;
 ```
+
+### Data In React
+
+React will handle it's data using a `unidirectional data flow`. This means that data is passed down from the top of the application to the bottom. We can determine what top and bottom are using our `component architecture design`.
+
+We can use events to send data back up the `component tree`.
+
+![Dataflow in React](images/dataflow.png)
+
+Data can be passed as `props` from a parent component to a child component
+
+### Props
