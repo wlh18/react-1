@@ -62,6 +62,14 @@ After installing create react app, go ahead an create a new react project by run
 $ create-react-app name-of-app
 ```
 
+Once your react app has been made, `cd` into it and run:
+
+```bash
+$ npm start
+```
+
+This command will start our react server and will be available to us on `http://localhost:3000`
+
 ## Components
 
 Components are the building blocks of a React application.
