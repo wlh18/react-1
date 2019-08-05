@@ -33,4 +33,4 @@ These components make up the `component based architecture` for our application
 
 Component based architecture is where an application uses components to make up each part of our application. This creates orginzation in our code.
 
-![Component Based Architecture](images/component-architecture.jpg)
+![Component Based Architecture](images/compnent-architecture.jpg)
