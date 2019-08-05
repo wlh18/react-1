@@ -24,6 +24,8 @@ React makes front end Javascript development much easier.
 
 Uses JSX.
 
+Virtual DOM.
+
 Utilizes something called `components` that are self contained pieces of the application.
 
 These components make up the `component based architecture` for our application
@@ -111,3 +113,59 @@ The tag syntax inside of a component is not a string or HTML. It's called `JSX`,
 </div>
 ```
 
+### State
+
+Class components can hold what is called `state`. State is what is used to keep track a data that is specific to a component. State is simply just an object that uses key / value pairs.
+
+We will add a `constructor` function to our class component to hold our `state` object. Inside of our constructor we need to invoke `super`, this will allow us to set state.
+
+```javascript
+import React from 'react';
+
+class MyComponent extends React.Component {
+    // constructor will go to the top of the component
+    constructor(){
+        // super function to allow us to set data
+        super();
+        // state object
+        this.state = {
+            // key / value pairs here
+            name: 'Tayte'
+        }
+    }
+    render(){
+        return (
+            <h1>This is a class component that is hilding state</h1>
+        )
+    }
+};
+
+export default MyComponent;
+```
+
+We can display our stae values inside of our JSX by wrapping them inside of `{}`.
+
+```javascript
+import React from 'react';
+
+class MyComponent extends React.Component {
+    constructor(){
+        super();
+
+        this.state = {
+            name: 'Tayte'
+        }
+    }
+    render(){
+        return (
+            <h1>My Name is: {this.state.name}</h1>
+        )
+    }
+};
+
+export default MyComponent;
+```
+
+Notice how we are saying `this.state.name`. We use `this` to refer to the component that we are currently in, which is the class `MyComponent`. Then our component we have a `state` object that has a `name` property on it.
+
+Now our component should be displaying `Tayte` inside of the `<h1>` tag.
