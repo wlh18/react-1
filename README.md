@@ -256,3 +256,9 @@ We can use events to send data back up the `component tree`.
 Data can be passed as `props` from a parent component to a child component
 
 ### Props
+
+Using `props` allow us to pass data from a parent component to a child component. We do this rendering a child component inside of our `JSX` then setting an attribute on the rendered component with the data that we want to pass as a value for the attribute.
+
+![props](images/props.png)
+
+PLEASE REFER TO `src/app.js` FOR AN EXAMPLE AND MORE INFORMATION ON PROPS.
