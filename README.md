@@ -4,19 +4,19 @@ This is the lecture repo used for React One. In this we will go over what React 
 
 ## What Is React?
 
-React is a Javascript library that was created and is maintained by Facebook. React is used to manage the DOM and create a highly performant user interfaces and front end applications. 
+React is a Javascript library that was created and is maintained by Facebook. React is used to manage the DOM and create a highly performant user interfaces and front end applications.
 
 Some popular websites that use React are:
 
-* Instagram
+- Instagram
 
-* Netflix
+- Netflix
 
-* Imgur
+- Imgur
 
-* Tesla
+- Tesla
 
-* Venmo
+- Venmo
 
 ## Why Use React?
 
@@ -60,6 +60,42 @@ After installing create react app, go ahead an create a new react project by run
 $ create-react-app name-of-app
 ```
 
-This command will be executed and spool up a brand new React project for us.
-
 ## Components
+
+Components are the building blocks of a React application.
+
+A component is either a class or a function that will return a React element that will describe how a section of the user interface will be displayed and interacted with.
+
+> Note: it's important to keep in mind that components need to start with an uppercase letter
+
+
+### Functional Component
+
+A functional component is a simple component or sometimes refered to as a `dumb component`. That is because a functional component can not hold any local state values to it, it's meant to just receive data and return a React element.
+
+```javascript
+import React from "react";
+
+const DumbComponent = () => <h1>Hello, I'm a functional component</h1>;
+
+export default DumbComponent;
+```
+
+### Class Component
+
+A class component is a complex component or sometimes refered to as a `smart component`. That is because a class component can hold local state value and we can also write logic to manipulate those state values. A class component will still return a React element.
+
+```javascript
+import React from "react";
+
+class SmartComponent extends React.Component {
+  // render method
+  render() {
+    return <h1>Hello, I'm a class component</h1>;
+  }
+}
+
+export default SmartComponent;
+```
+
+Above, notice that we have a method called `render`. This method is where we will choose what elements to return to make up the React element.
