@@ -151,7 +151,7 @@ import React from 'react';
 class MyComponent extends React.Component {
     constructor(){
         super();
-
+        
         this.state = {
             name: 'Tayte'
         }
@@ -169,3 +169,78 @@ export default MyComponent;
 Notice how we are saying `this.state.name`. We use `this` to refer to the component that we are currently in, which is the class `MyComponent`. Then our component we have a `state` object that has a `name` property on it.
 
 Now our component should be displaying `Tayte` inside of the `<h1>` tag.
+
+#### Updating State
+
+We can update the values on our state the `.setState()` method that is built into the component.
+
+This method will allow us to pass a new value to our state and cause or component to `rerender` to now show the changes in our state.
+
+How to use it:
+
+1. We first want to target our component using the `this` keyword.
+
+2. Then we call `.setState()`
+
+3. setState will receive an object as an argument.
+
+4. We will then choose the property(s) to update and what their new value will be using key / value pairs.
+
+```javascript
+this.setState({
+    propertyToUpdate: newValue
+})
+```
+
+We will usually have `this.setState()` be executed inside of the callback function that is passed to the event handler.
+
+#### Event Handler
+
+We can use event handlers inside of our JSX to have specific logic be executed when a specific event occurs on the element that has the event handler set.
+
+This is very similar to vanilla javascript an we will place it as an attribute on an element.
+
+```jsx
+<h1 onClick={console.log('I have been clicked!')}>This is a JSX element that has an event handler</h1>
+```
+
+The big difference is that we prefix most events with `on` and the value will be wrapped in `{}` instead of `""`.
+
+#### Updating State In Action
+
+Let's take a look at what it's like to update our name on state to whatever the value of an input box is.
+
+```javascript
+import React from 'react';
+
+class MyComponent extends React.Component {
+    constructor(){
+        super();
+
+        this.state = {
+            name: 'Tayte'
+        }
+    }
+
+    // we can write methods for our class here just like a normal class
+    handleChange(event){
+        // use this.setState to update state
+        this.setState({
+            // we first choose what property on state to update
+            // then decided it's new value
+            // here we are assigning the value of whatever is typed into the input box
+            name: event.target.value
+        })
+    }
+
+
+    render(){
+        return (
+            <h1>My name is: {this.state.name}</h1>
+            <input type="text" onChange={this.handleChange}/>
+        )
+    }
+};
+
+export default MyComponent;
+```
