@@ -235,7 +235,7 @@ class MyComponent extends React.Component {
         // use this.setState to update state
         this.setState({
             // we first choose what property on state to update
-            // then decided it's new value
+            // then decided its new value
             // here we are assigning the value of whatever is typed into the input box
             name: event.target.value
         })
@@ -255,7 +255,7 @@ export default MyComponent;
 
 ### Data In React
 
-React will handle it's data using a `unidirectional data flow`. This means that data is passed down from the top of the application to the bottom. We can determine what top and bottom are using our `component architecture design`.
+React will handle its data using a `unidirectional data flow`. This means that data is passed down from the top of the application to the bottom. We can determine what top and bottom are using our `component architecture design`.
 
 We can use events to send data back up the `component tree`.
 
