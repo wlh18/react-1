@@ -4,7 +4,7 @@ This is the lecture repo used for React One. In this we will go over what React 
 
 ## What Is React?
 
-React is a Javascript library that was created and is maintained by Facebook. React is used to manage the DOM and create a highly performant user interfaces and front end applications.
+React is a Javascript library that was created and is maintained by Facebook. React is used to manage the DOM and create highly performant user interfaces and front end applications.
 
 Some popular websites that use React are:
 
@@ -32,21 +32,21 @@ These components make up the `component based architecture` for our application
 
 ## Component Based Architecture
 
-Component based architecture is where an application uses components to make up each part of our application. This creates orginzation in our code and an understanding on how to layout our components in our application.
+Component based architecture is where an application uses components to make up each part of our application. This creates organization in our code and an understanding on how to layout our components in our application.
 
 ![Component Based Architecture](images/compnent-architecture.jpg)
 
 ## Virtual DOM
 
-The `Virtual DOM` is a light weight copy of the actual DOM. The Virtual DOM is the representation we will be using to update our user interface in React. Anytime their is a change to the Virtual DOM, it will go through a process called `reconciliation`. This is where it compares itself to the actual DOM to see if there has been any changes, and if there has been then it will update the actual DOM only at the part that needs to be updated.
+The `Virtual DOM` is a light-weight copy of the actual DOM. The Virtual DOM is the representation we will be using to update our user interface in React. Anytime there is a change to the Virtual DOM, it will go through a process called `reconciliation`. This is where it compares itself to the actual DOM to see if there has been any changes, and if there has been then it will update the actual DOM only at the part that needs to be updated.
 
 ![Virtual DOM](images/dom.png)
 
 ## Get Started
 
-We will get started by using the command line application `create-react-app` to quickly make a React application. Create react app is a bootstrapping tool that helps developer easily get off the ground and started with a React project.
+We will get started by using the command line application `create-react-app` to quickly make a React application. Create react app is a bootstrapping tool that helps developers easily get off the ground and started with a React project.
 
-We first need to gloably install `create-react-app` onto our machines.
+We first need to globally install `create-react-app` onto our machines.
 
 In the terminal run:
 
@@ -54,9 +54,9 @@ In the terminal run:
 $ npm install -g create-react-app
 ```
 
-The `-g` is what is known as a flag, it pretty much just says to install this globaly to our machine so we can use it anywhere.
+The `-g` is what is known as a flag, it pretty much just says to install this globally to our machine so we can use it anywhere.
 
-After installing create react app, go ahead an create a new react project by running:
+After installing create react app, go ahead and create a new react project by running:
 
 ```bash
 $ create-react-app name-of-app
@@ -81,7 +81,7 @@ A component is either a class or a function that will return a React element tha
 
 ### Functional Component
 
-A functional component is a simple component or sometimes refered to as a `dumb component`. That is because a functional component can not hold any local state values to it, it's meant to just receive data and return a React element.
+A functional component is a simple component or sometimes referred to as a `dumb component`. That is because a functional component cannot hold any local state values to it, it's meant to just receive data and return a React element.
 
 ```javascript
 import React from "react";
@@ -93,7 +93,7 @@ export default DumbComponent;
 
 ### Class Component
 
-A class component is a complex component or sometimes refered to as a `smart component`. That is because a class component can hold local state value and we can also write logic to manipulate those state values. A class component will still return a React element.
+A class component is a complex component or sometimes referred to as a `smart component`. That is because a class component can hold local state values and we can also write logic to manipulate those state values. A class component will still return a React element.
 
 ```javascript
 import React from "react";
@@ -123,7 +123,7 @@ The tag syntax inside of a component is not a string or HTML. It's called `JSX`,
 
 ### State
 
-Class components can hold what is called `state`. State is what is used to keep track a data that is specific to a component. State is simply just an object that uses key / value pairs.
+Class components can hold what is called `state`. State is what is used to keep track of data that is specific to a component. State is simply just an object that uses key / value pairs.
 
 We will add a `constructor` function to our class component to hold our `state` object. Inside of our constructor we need to invoke `super`, this will allow us to set state.
 
@@ -143,7 +143,7 @@ class MyComponent extends React.Component {
     }
     render(){
         return (
-            <h1>This is a class component that is hilding state</h1>
+            <h1>This is a class component that is holding state</h1>
         )
     }
 };
@@ -151,7 +151,7 @@ class MyComponent extends React.Component {
 export default MyComponent;
 ```
 
-We can display our stae values inside of our JSX by wrapping them inside of `{}`.
+We can display our state values inside of our JSX by wrapping them inside of `{}`.
 
 ```javascript
 import React from 'react';
@@ -174,7 +174,7 @@ class MyComponent extends React.Component {
 export default MyComponent;
 ```
 
-Notice how we are saying `this.state.name`. We use `this` to refer to the component that we are currently in, which is the class `MyComponent`. Then our component we have a `state` object that has a `name` property on it.
+Notice how we are saying `this.state.name`. We use `this` to refer to the component that we are currently in, which is the class `MyComponent`. Inside of our component we have a `state` object that has a `name` property on it.
 
 Now our component should be displaying `Tayte` inside of the `<h1>` tag.
 
@@ -182,7 +182,7 @@ Now our component should be displaying `Tayte` inside of the `<h1>` tag.
 
 We can update the values on our state the `.setState()` method that is built into the component.
 
-This method will allow us to pass a new value to our state and cause or component to `rerender` to now show the changes in our state.
+This method will allow us to pass a new value to our state and cause or component to `re-render` to now show the changes in our state.
 
 How to use it:
 
