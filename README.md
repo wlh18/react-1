@@ -2,6 +2,10 @@
 
 This is the lecture repo used for React One. In this we will go over what React is, what it is used for, and how to get started.
 
+## Lecture Slides
+
+https://slides.com/mattbodily/deck-28
+
 ## What Is React?
 
 React is a Javascript library that was created and is maintained by Facebook. React is used to manage the DOM and create highly performant user interfaces and front end applications.
