@@ -4,7 +4,7 @@ This is the lecture repo used for React One. In this we will go over what React 
 
 ## Lecture Slides
 
-https://slides.com/mattbodily/deck-28
+https://slides.com/matias_perez/react-one
 
 ## What Is React?
 
