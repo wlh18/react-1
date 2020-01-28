@@ -274,3 +274,7 @@ Using `props` allow us to pass data from a parent component to a child component
 ![props](images/props.png)
 
 PLEASE REFER TO `src/app.js` FOR AN EXAMPLE AND MORE INFORMATION ON PROPS.
+
+# Additional Resources
+
+https://reactjs.org/docs/introducing-jsx.html
