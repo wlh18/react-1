@@ -6,6 +6,16 @@ This is the lecture repo used for React One. In this we will go over what React 
 
 https://slides.com/matias_perez/react-one
 
+# Student Learning Objectives
+
+* Student can create an app with create react app
+* Student can render html on the screen
+* Student understands JSX ( {}, className)
+* Student can initialize state in a constructor function
+* Student can render state on the screen
+* Student can use event handlers and e.target.value
+
+
 ## What Is React?
 
 React is a Javascript library that was created and is maintained by Facebook. React is used to manage the DOM and create highly performant user interfaces and front end applications.
