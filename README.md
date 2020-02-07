@@ -287,4 +287,27 @@ PLEASE REFER TO `src/app.js` FOR AN EXAMPLE AND MORE INFORMATION ON PROPS.
 
 # Additional Resources
 
-https://reactjs.org/docs/introducing-jsx.html
+## General
+
+The React documentation from reactjs.org is a great resource for understanding the React topics introduced as part of today's lecture:
+
+- https://reactjs.org/docs/introducing-jsx.html - A brief explanation of JavaScript Syntax Extension (JSX) in React, including its importance and use in React
+- https://reactjs.org/docs/rendering-elements.html - An overview of element rendering in the React DOM node and an introduction into React DOM updating
+- https://reactjs.org/docs/components-and-props.html - An introduction to composing, rendering and extracting components in React - both functional and class components. This resource also introduces the props object and how it is used to pass information into components.
+- https://reactjs.org/docs/state-and-lifecycle.html - A brief overview of state implementation, updating and application in React class components including an explanation for the setState method and the asynchronous nature of the method. This resource also introduces component lifecycle methods that can be used in class components.
+- https://reactjs.org/docs/handling-events.html - Includes an introduction to event handling in React components including a comparison of event handling using JavaScript vs. React
+
+## Videos
+
+- https://www.youtube.com/watch?v=sBws8MSXN7A - This is a great resource from Traversy Media about React and getting started building applications using React
+- https://www.youtube.com/watch?v=Ke90Tje7VS0 - This is another good resource for getting started developing in React 
+from Programming with Mosh
+
+
+## Articles
+
+- https://www.taniarascia.com/getting-started-with-react/ - Overview and walkthrough tutorial for starting out in React (this link is suggested in the React docs)
+- https://medium.com/@hamzamahmood/advantages-of-developing-modern-web-apps-with-react-js-8504c571db71 - A great Medium article detailing React some of the advantages associated with developing web applications using React
+- https://medium.com/@dan.shapiro1210/understanding-component-based-architecture-3ff48ec0c238 - Another great Medium article that takes a deeper dive into explaining React's component-based architecture, what it is, how it differs to other application structures, and finally some of the benefits and/or drawbacks of using a component-based architecture
+- https://www.exclamationlabs.com/blog/the-case-for-unidirectional-data-flow/ - This is an interesting opinion article about data flow constructs and benefits associated with unidirectional data flow
+
