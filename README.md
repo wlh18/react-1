@@ -2,7 +2,11 @@
 
 This is the lecture repo used for React One. In this we will go over what React is, what it is used for, and how to get started.
 
-## Lecture Slides: https://slides.com/mattbodily/react-one
+Lecture Slides: https://slides.com/dmweb/react-1
+
+Mini Project: https://github.com/DevMountain/react-1-mini
+
+Afternoon Project: https://github.com/DevMountain/react-1-afternoon
 
 # Student Learning Objectives
 
